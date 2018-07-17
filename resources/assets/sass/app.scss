@@ -1,0 +1,71 @@
+// Fonts
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+// Variables
+@import "variables";
+@import "bootstrap";
+@import "~@fortawesome/fontawesome-free/css/all.css";
+
+html, body {
+    //height: 100%;
+}
+
+body {
+    background-color: #f1f1f1;
+}
+
+/* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+.container-fluid, .row.content {
+    height: 100%
+}
+
+/* Set gray background color and 100% height */
+.sidenav {
+    height: 100%;
+}
+
+/* On small screens, set height to 'auto' for the grid */
+@media screen and (max-width: 767px) {
+    .row.content {
+        height: 100%;
+    }
+}
+
+a {
+    color: #000;
+}
+
+.navbar-logo {
+    font-size: 38px;
+}
+
+.content-laravel {
+    background-color: #FFF;
+    //height: 100%;
+    border: 1px solid #E3E3E3;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    padding-top: 32px;
+    position: relative;
+}
+
+.navbar-laravel a {
+    text-decoration: none;
+    color: #000;
+}
+
+.navbar-laravel ul {
+    list-style-type: none;
+}
+
+table tr:hover {
+    background-color: #a2abaf;
+    cursor: pointer;
+}
+
+#flash-message {
+    position: absolute;
+    z-index: 10;
+    top: 20px;
+    right: 20px;
+}
